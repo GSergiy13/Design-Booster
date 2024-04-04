@@ -1,0 +1,60 @@
+.partners {
+ background: #F6F6F6;
+ padding: 70px 0; 
+
+
+ &__title {
+  color: #21225F;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 20px;
+ }
+
+ &__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;;
+ }
+
+ &__logo {
+  display: block;
+ }
+
+ .container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+ }
+}
+
+
+
+
+
+@media screen and (max-width: 1536px) {
+  .partners {
+  padding: 50px 0; 
+  
+    &__title {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+.partners {
+display: none;
+}
+
+
+}

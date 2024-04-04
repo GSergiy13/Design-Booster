@@ -1,0 +1,131 @@
+.bonus-programe {
+  padding: 120px 0;
+  background-image: url('@img/posadca-form/bg-bonus.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center ;
+
+  &__title {
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 135%; /* 135% */
+    text-transform: uppercase;
+    color:  #272727;
+    margin-bottom: 72px;
+
+    span {
+      color: #FF405E;
+    }
+  }
+
+
+  
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    padding: 14px;
+    border-radius: 100px;
+    background: #FF405E;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%; /* 100% */
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+        box-shadow: 0 0px 0px #FF405E;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #fff;
+        box-shadow: 0 5px 10px #FF405E;
+      }
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+.bonus-programe {
+  position: relative;
+  padding: 90px 20px;
+  background-image: none;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-image: url('@img/posadca-form/bg-bonus.png');
+       background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+
+  &__title {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 32px;
+    max-width: 50%;
+  }  
+
+  &__btn {
+    margin: 0 ;
+    max-width: 380px;
+    padding: 14px;
+    font-size: 20px;
+  }
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 568px) {
+.bonus-programe {
+  padding: 50px 20px 0; 
+  background-image: none;
+
+    &::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 80%;
+    right: 0;
+    top: 0;
+    background-image: url('@img/posadca-form/bg-bonus.png');
+       background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 22px;
+    max-width: 60%;
+  }  
+
+  &__btn {
+    margin: 0 ;
+    max-width: 380px;
+    padding: 14px;
+    font-size: 18px;
+  }
+}
+
+}

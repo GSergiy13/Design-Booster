@@ -1,0 +1,265 @@
+.advantage {
+  padding: 50px 0 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+
+  .advantage-choice {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 75px;
+  }
+
+  .advantage-price {
+    display: flex;
+    gap: 170px;
+    padding: 40px 50px 40px 166px;
+    background: #18181B; 
+
+   &__text {
+    position: relative;
+    font-family: GLDDisplay, sans-serif;
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 100%;
+    color: #fff;
+    padding-right: 250px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 0;
+      top: 50%;
+      height: 122px;
+      width: 15px;
+      background-image: url('@img/decoration.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+   }
+
+   &__cost {
+    position: relative;
+
+    &-old {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color:  #FFF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 100%;
+      transform: translateY(-30%);
+
+     span {
+        color:#A1A1AA;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 100%;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+        width: 110%;
+        height: 2px;
+        background: #FF0028;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+
+    &-new {
+      padding-top: 30px;
+      padding-left: 120px;
+      color: #EBFC67;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 84px;
+      font-weight: 700;
+      line-height: 100%;
+
+      span {
+        color:#A1A1AA;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 100%;
+      }
+    }
+   }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 426px;
+    min-height: 421px;
+    background: #151515;
+    padding: 25px 30px 40px 20px;
+    color: #fff;
+
+    &-title {
+      width: 80%;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 120%;
+      transition: all 0.7s;
+    }
+
+    &-desc {
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+
+    &:hover {
+      .advantage__box-title {
+        color: #D2F65A;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1800px;
+    margin-left: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 1536px) {
+
+.advantage {
+  padding: 40px 0 50px;
+
+  &__title {
+    font-size: 26px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+  }
+
+  .advantage-choice {
+    gap: 22px;
+    margin-bottom: 55px;
+    justify-content: flex-end;
+  }
+
+  .advantage-price {
+    padding: 40px 50px 40px 86px;
+
+   &__text {
+    font-size: 68px;
+    padding-right: 200px;
+   }
+
+   &__cost {
+    position: relative;
+
+    &-old {
+      font-size: 32px;
+    }
+    &-new {
+      font-size: 64px;
+    }
+   }
+  }
+
+  &__box {
+    max-width: 326px;
+    min-height: 360px;
+
+    &-title {
+      font-size: 38px;
+    }
+
+    &-desc {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+  }
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+.advantage {
+  padding: 40px 20px 50px;
+  box-shadow: none;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 66px;
+    padding-left: 0px;
+  }
+
+  .advantage-choice {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 60px;
+    justify-content: flex-end;
+  }
+
+  .advantage-price {
+    flex-direction: column;
+    gap: 100px;
+    padding: 48px 27px 60px 48px;
+
+   &__text {
+    font-size: 72px;
+    padding-right: 0px;
+
+    &::after {
+      right: auto;
+      left: 48px;
+      transform: rotate(90deg);
+    }
+   }
+
+   &__cost {
+    position: relative;
+
+    &-old {
+      font-size: 42px;
+    }
+    &-new {
+      font-size: 60px;
+      padding-left: 13px;
+    }
+   }
+  }
+
+  &__box {
+    max-width: 100%;
+    min-height: 360px;
+
+    &-title {
+      font-size: 38px;
+    }
+
+    &-desc {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+  }
+}
+
+}

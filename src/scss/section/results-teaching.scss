@@ -1,0 +1,207 @@
+.results-teaching {
+  padding: 160px 0 0px; 
+
+
+  .title {
+    width: 100%;
+    max-width: 752px;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__col {
+    width: 100%;
+    max-width: 752px;
+
+    &:nth-child(2) {
+      transform: translateY(-30%);
+    }
+  }
+
+
+  &__title {
+    font-family: GLDDisplay, sans-serif;
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 72px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: 140px;
+    animation: moveFlay 7s infinite ease-out;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    background: #F8F8F8;
+    padding: 48px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+
+    &-num {
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-right: 16px;
+     min-width: fit-content;
+    }
+
+    &-title {
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background: #D2F65A;
+    }
+  }
+
+  &__item + .results-teaching__item {
+    margin-top: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1640px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1536px) {
+
+.results-teaching {
+  padding: 140px 0 30px; 
+
+
+  &__col {
+    width: 100%;
+    max-width: 680px;
+
+    &:nth-child(2) {
+      transform: translateY(-20%);
+    }
+  }
+
+
+  &__title {
+    font-size: 68px;
+    line-height: 120%;
+    margin-top: 22px;
+  }
+
+  &__picture {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: 140px;
+  }
+
+  &__item {
+    padding: 38px;
+
+    &-num {
+      font-size: 26px;
+    }
+
+    &-title {
+      font-size: 26px;
+    }
+
+    &:hover {
+      background: #D2F65A;
+    }
+  }
+}
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+.results-teaching {
+  padding: 100px 0 60px; 
+
+
+  &__col {
+    &:nth-child(2) {
+      transform: translateY(-0%);
+    }
+  }
+
+  &__wrapper {
+    flex-direction: column;
+  }
+
+
+  &__title {
+    display: none;
+  }
+  &__picture {
+    display: none;
+  }
+
+  &__item {
+    padding: 48px;
+    align-items:flex-start;
+    gap: 16px;
+    flex-direction: column;
+
+    &-num {
+      font-size: 32px;
+    }
+
+    &-title {
+      font-size: 24px;
+    }
+
+    &:hover {
+      background: #D2F65A;
+    }
+  }
+}
+}
+
+
+
+
+@keyframes moveFlay {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+
+    25% {
+        transform: scale(0.8) rotate(15deg);
+    }
+     50% {
+        transform: scale(0.8) rotate(20deg);
+    }
+
+      50% {
+        transform: scale(0.8) rotate(-15deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}

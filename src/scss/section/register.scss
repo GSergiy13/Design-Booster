@@ -1,0 +1,179 @@
+.register {
+  background:  #000;
+  padding: 80px 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: GLDDisplay, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: 48px;
+  }
+  
+
+  &__desc {
+    color: #FDED87;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 48px;
+  }
+
+  &__lips {
+    width: 100%;
+    max-width: 376px;
+    transform: translateY(-25%);
+  }
+
+  .form {
+    &__wrapper {
+      display: flex;
+    align-items: flex-end;
+      gap: 10px;
+    }
+
+    &__input {
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 30px;
+      border: 1px solid #818A91;
+      background: #FFF;
+
+      &::placeholder {
+        color: #373A3C;
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    &__item {
+      width: 100%;
+      max-width: 262px;
+
+      label {
+        display: block;
+        color: #FFF;
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 5px;
+
+        sup {
+          color: red;
+        }
+      }
+    }
+
+    .btn {
+      margin: 55px 0 0 0;
+      background: none;
+
+      &:hover {
+        background: #D2F65A;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1090px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1536px) {
+
+.register {
+  padding: 60px 0;
+
+
+  &__title {
+    font-size: 46px;
+    margin-bottom: 38px;
+  }
+  
+
+  &__desc {
+    font-size: 18px;
+    margin-bottom: 38px;
+  }
+
+  &__lips {
+    max-width: 306px;
+  }
+
+  .form {
+
+
+    .btn {
+      margin: 45px 0 0 0;
+      background: none;
+    }
+  }
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+.register {
+  padding: 47px 0;
+
+  &__wrapper {
+    flex-direction: column-reverse;
+    align-items:flex-end;
+  }
+
+
+  &__title {
+    font-size: 56px;
+    margin-bottom: 66px;
+  }
+  
+
+  &__desc {
+    font-size: 22px;
+    margin-bottom: 66px;
+  }
+
+  &__lips {
+    transform: translate(40%, -20%);
+    max-width: 306px;
+  }
+
+  .form {
+
+    &__wrapper {
+      flex-direction: column;
+          align-items: flex-start;
+    }
+
+    .btn {
+      margin: 66px 0 0 0;
+      background: none;
+    }
+  }
+}
+}

@@ -1,0 +1,215 @@
+.pricing {
+  background: #000;
+  padding: 80px 0 ;
+  color: #fff;
+
+  &__title {
+    width: 100%;
+    max-width: 948px;
+    margin: 0 auto 48px;
+    color: #D5FD51;
+    font-family: Unbounded, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .pricing-box {
+    width: 100%;
+    max-width: 462px;
+    color: #141414;
+    padding: 32px;
+    border-radius: 24px;
+    border: 2px solid #505050;
+    background: #FFF;
+
+    &--vip {
+      background: #D5FD51;
+      
+      .pricing-box__list-item {
+        color: #000;
+      }
+    }
+
+    &__title {
+      color: #141414;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter, sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 142.857%;
+      margin-bottom: 16px;
+    }
+
+    &__list {
+      padding-left: 23px;
+
+      &--done {
+        padding-left: 30px;
+        .pricing-box__list-item {
+          position: relative;
+          list-style: none;
+
+          &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url('@img/icon/done.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: translate(-120%, -20%);
+          }
+        }
+      }
+
+      &-item {
+        color: #3E3E59;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        list-style: disc;
+
+        &--not {
+          opacity: 0.6;
+          text-decoration: line-through;
+        }
+      }
+
+      &-item + .pricing-box__list-item {
+        margin-top: 10px;
+      }
+    }
+
+    &__oldprice {
+      margin-top: 16px;
+
+      &-text {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+
+        span {
+          font-size: 20px;
+          font-weight: 900;
+         text-decoration: line-through;
+        }
+      }
+    }
+
+    &__price {
+      color: #FF405E;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+
+    &__sale {
+      color: #3E3E59;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 187.5% */
+      margin-bottom: 32px;
+    }
+
+    &__text {
+      color: #141414;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 200% */
+      margin-bottom: 12px;
+    }
+
+    &__bonus {
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        margin-top: 12px;
+
+      &-title {
+        color: #FF405E;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+       }
+    }
+
+    &__bonus + .pricing-box__bonus {
+      margin-top: 12px;
+    }
+
+    .btn-price {
+      display: block;
+      padding: 16px 22px;
+      border-radius: 8px;
+      border: 2px solid #141414;
+      background: #FFF;
+      color: #141414;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+      margin-top: 60px;
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1490px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .pricing {
+    padding: 60px 0;
+
+    &__title {
+      font-size: 36px;
+      text-align: left;
+    }
+
+    &__wrapper {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

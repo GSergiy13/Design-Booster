@@ -1,0 +1,188 @@
+.about-us {
+  padding: 160px 0;
+
+  .title {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 95px;
+  }
+
+  &__col {
+    &:nth-child(2) {
+      transform: translateY(-40%);
+    }
+  }
+
+  &__box {
+    padding: 48px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.6s;
+
+    &-title {
+      color: #000;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &-text {
+      font-family: Satoshi,sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 180%;
+    }
+
+    &:hover {
+      background: #D2F65A;
+    }
+  }
+
+  &__box + .about-us__box {
+    margin-top: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.about-us-do {
+  padding: 0px 0px 0px;
+
+  .title {
+    max-width: 752px;
+  }
+
+  .about-us__col {
+    width: 100%;
+    max-width: 48%;
+  }
+
+  .about-us__box {
+    padding: 24px 48px;
+
+  }
+}
+
+
+@media screen and (max-width: 1536px) {
+
+.about-us {
+  padding: 140px 0;
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    gap: 50px;
+  }
+
+
+  &__box {
+    padding: 42px;
+
+    &-title {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__box + .about-us__box {
+    margin-top: 12px;
+  }
+}
+
+
+  .about-us.about-us-do {
+    padding: 160px 0 40px;
+
+    .title {
+      font-size: 46px;
+      max-width: 552px;
+    }
+
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  .about-us {
+    padding: 106px 0 58px;
+
+  .title {
+    margin-bottom: 31px;
+  }
+
+  &__wrapper {
+    gap: 32px;
+    flex-direction: column;
+  }
+
+    &__col {
+    &:nth-child(2) {
+      transform: translateY(0%);
+    }
+  }
+
+
+  &__box {
+    padding: 48px  16px 48px 48px;
+
+    &-title {
+      font-size: 24px;
+    }
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+
+  &__box + .about-us__box {
+    margin-top: 32px;
+  }
+}
+
+
+
+  .about-us.about-us-do {
+    padding: 80px 0 40px;
+
+    .title {
+      font-size: 36px;
+      max-width: 552px;
+    }
+  
+    .about-us__col {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+  .about-us__box + .about-us__box {
+    margin-top: 32px;
+  }
+  }
+
+}

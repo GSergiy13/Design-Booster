@@ -1,0 +1,144 @@
+@import "fonts";
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Plus+Jakarta+Sans:wght@700&family=Unbounded:wght@400;600&display=swap');
+
+@import "reset";
+
+@import "./section/header.scss";
+
+@import "./section/promo.scss";
+@import "./section/about-us.scss";
+@import "./section/study-works.scss";
+@import "./section/program.scss";
+// @import "./section/something-more.scss";
+// @import "./section/advantage.scss";
+// @import "./section/results-teaching.scss";
+
+
+@import "./section/pricing.scss";
+@import "./section/personal-installments.scss";
+@import "./section/faq.scss";
+@import "./section/curse.scss";
+
+
+@import "./section/places-limited.scss";
+@import "./section/teachers.scss";
+
+@import "./section/thanks.scss";
+// @import "./section/register.scss";
+@import "./section/exciting-banner.scss";
+@import "./section/partners.scss";
+@import "./section/broadcast.scss";
+
+
+@import "./posadca/promo-form.scss";
+@import "./posadca/programe.scss";
+@import "./posadca/bonus-programe.scss";
+@import "./posadca/autor.scss";
+
+
+@import "./section/footer.scss";
+
+
+
+.popub {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #000000eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+
+
+  .content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    max-width: 460px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 4px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content:'';
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: #000000eb;
+       transform: translate(-50%, -50%) rotate(-45deg);
+           transition: all 0.5s;
+    }
+    &::before {
+      position: absolute;
+      content:'';
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: #000000eb;
+      transform: translate(-50%, -50%) rotate(45deg);
+          transition: all 0.5s;
+    }
+
+    &:hover {
+      &::after, &::before  {
+        background: #FF405E;
+      }
+
+    }
+  }
+
+}
+// FF405E
+
+
+
+.popub.active {
+  animation: feidIN 1.5s forwards;
+}
+
+.popub.hidden{
+    animation: feidINoff 1.5s forwards;
+}
+
+@keyframes feidIN {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes feidINoff {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

@@ -1,0 +1,144 @@
+.programe {
+  padding-top: 120px;
+
+  &__title {
+      font-family: "Gilroy", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 155% */
+    text-transform: uppercase;
+    margin-bottom: 80px;
+
+    span {
+      color: #FF405E;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .programe-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #E6E8EC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+      margin-bottom: 12px;
+      color: #061C3D;
+      font-family: Unbounded, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 133%; /* 133.333% */
+    }
+
+    &__list {
+      padding-left: 20px;
+      margin-bottom: 32px;
+
+      &-item {
+        color:  #42526B;
+        font-family: Lexend, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        list-style: disc;
+        line-height: 150%; /* 150% */
+      }
+    }
+    &__btn {
+      display: block;
+      padding: 14px;
+      width: 100%;
+      border-radius: 100px;
+      background: #FF405E;
+
+      color: #FFF;
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 100%; /* 218.182% */
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 4px #FF405E;
+      transition: all 0.5s;
+
+      &:hover {
+        box-shadow: 0 5px 10px #FF405E;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1324px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+.programe {
+  padding-top: 80px;
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+
+    span {
+      color: #FF405E;
+    }
+  }
+
+  &__wrapper {
+   flex-wrap: wrap;
+  }
+
+  .programe-box {
+    width: 100%;
+    max-width: calc(50% - 10px);
+    padding: 30px 20px;
+  }
+}
+}
+
+@media screen and (max-width: 568px) {
+
+.programe {
+  padding-top: 4ch;
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+   flex-wrap: wrap;
+  }
+
+  .programe-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 20px;
+
+    &__title {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+  }
+}
+}
